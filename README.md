@@ -1,1 +1,1 @@
-# parcial-2-parte-2
+# Leandro Ludueña Segundo Parcial - Informática General Artes Multimediales - UNA
