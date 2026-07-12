@@ -1,3 +1,4 @@
+// Array de datos curiosos
 const datosCuriosos = [
 
 "Rafael Lozano-Hemmer es un artista mexicano-canadiense.",
@@ -22,6 +23,7 @@ const datosCuriosos = [
 
 ];
 
+// Función para mostrar un dato al azar
 function mostrarDato(){
 
 let numero=Math.floor(Math.random()*datosCuriosos.length);

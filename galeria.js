@@ -23,10 +23,17 @@ imagen:"lozano-hemmer-1.jpg"
 nombre:"Encode/Decode",
 año:2000,
 imagen:"lozano-hemmer.jpg"
+},
+
+{
+nombre:"Black Hole",
+año:2026,
+imagen:"Black Hole.jpg"
 }
 
 ]; 
 
+// Referencias a los elementos HTML
 const galeria = document.getElementById("galeria");
 const boton = document.getElementById("cambiarDiseno");
 
@@ -55,6 +62,7 @@ let grande = false;
 
 boton.addEventListener("click", cambiarDiseno);
 
+// Cambia el diseño de la galería
 function cambiarDiseno(){
 
     grande = !grande;
@@ -71,20 +79,21 @@ function cambiarDiseno(){
 
     }
 
-}
+    const imagenes = document.querySelectorAll("#galeria img");
 
-const imagenes = document.querySelectorAll("#galeria img");
+    for(let i=0;i<imagenes.length;i++){
 
-for(let i = 0; i < imagenes.length; i++){
+        if(grande){
 
-    if(grande){
+            imagenes[i].style.maxWidth="300px";
 
-        imagenes[i].style.maxWidth = "300px";
+        }else{
 
-    }else{
+            imagenes[i].style.maxWidth="600px";
 
-        imagenes[i].style.maxWidth = "600px";
+        }
 
     }
 
 }
+mostrarGaleria();
