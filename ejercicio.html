@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="estilos.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/cs  s2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="contenedor">  
@@ -23,22 +23,65 @@
     </nav>
   </header>
   <main>
-    <section>
+     <section>
       <h2>Tecnología y crítica social</h2>
       <p>El uso de tecnología en su trabajo no es neutral, sino que se vincula con una mirada crítica sobre temas contemporáneos. Sus obras abordan problemáticas como la vigilancia masiva, el control de datos y la exposición de la identidad en espacios públicos.</p>
       <p>A través de estas propuestas, invita a reflexionar sobre cómo las tecnologías afectan la vida cotidiana. La interacción se convierte en una herramienta para visibilizar estas tensiones y cuestionar su impacto en la sociedad.</p>
-    </section>
+     </section>
 
-    <section>
+     <section>
       <h2>Espacio público y experiencia colectiva</h2>
       <p>Muchas de sus instalaciones se desarrollan en espacios urbanos, lo que permite ampliar el alcance del arte más allá de los ámbitos tradicionales. Estas intervenciones transforman el paisaje cotidiano en un entorno de experimentación.</p>
       <p>El carácter colectivo de estas obras genera experiencias compartidas entre desconocidos, promoviendo nuevas formas de interacción social. El espacio público se convierte así en un lugar de encuentro donde arte, tecnología y comunidad se entrelazan.</p>
-    </section>
-     
-     <footer>
-        Segundo Parcial - Informática General - UNA
-     </footer>
+     </section>
+    
+      <h2>Control de luces móviles</h2>
+
+      <label>Cantidad de obras:</label>
+      <input type="number" id="cantidadObras">
+
+      <button id="btnComenzar">
+      Comenzar
+      </button>
+
+      <hr>
+
+      <label>Nombre de la obra</label>
+      <input type="text" id="nombre">
+
+      <label>Cantidad de luces</label>
+      <input type="number" id="luces">
+
+      <label>Horas por día</label>
+      <input type="number" id="horas">
+
+      <label>Consumo por hora (kWh)</label>
+      <input type="number" id="consumo">
+
+      <label>Costo por kWh</label>
+      <input type="number" id="costo">
+
+      <button id="btnAgregar" disabled>
+       Agregar obra
+      </button>
+
+      <hr>
+
+       <button id="btnCalcular" disabled>
+          Calcular resultados
+       </button>
+
+       <button id="btnReiniciar" disabled>
+          Reiniciar
+       </button>
+
+       <div id="resultado"></div>
+
+       <footer>
+         Segundo Parcial - Informática General - UNA
+       </footer>
   </main>
   </div>
+  <script src="ejercicio.js"></script>
 </body>
 </html>

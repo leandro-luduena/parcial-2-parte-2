@@ -27,5 +27,44 @@ background:white;
 padding:2rem;
 
 border-radius:1rem;
+}
 
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:2rem;
+    padding:0;
+}
+
+nav a{
+
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:red;
+
+}
+
+nav a:visited{
+
+    color:black;
+
+}
+
+nav a:active{
+
+    color:blue;
+
+}
+
+img{
+
+    width:100%;
+    max-width:600px;
+    border-radius:1rem;
 }
